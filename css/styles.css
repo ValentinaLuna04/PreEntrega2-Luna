@@ -255,6 +255,11 @@ main{
 
 /*Modals index*/
 
+.modal-content{
+    background-color: rgb(19, 19, 19);
+    border-radius: 10px;
+}
+
 .modal-body{
     width: 100%;
     background-color: rgb(19, 19, 19);
@@ -472,11 +477,41 @@ main{
     overflow: hidden;
 }
 
-
-
-
 /*Fin del Top*/
 
+/*Bottom*/
+
+#bermudas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#pantalones{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/*Accessories*/
+
+#minibags{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#bags{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#uñas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
 /*Contacto*/
 .container-contacto{
     color: rgb(78, 160, 255);
