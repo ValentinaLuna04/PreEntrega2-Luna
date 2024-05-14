@@ -512,16 +512,24 @@ main{
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
 /*Contacto*/
 .container-contacto{
-    color: rgb(78, 160, 255);
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.2rem;
+    margin-bottom: 7%;
+}
+
+.contacto1{
+    grid-column: 1 / 2;
+    justify-self: center;
+    margin-top: 10%;
 }
 
 .contacto1 .info p{
-    margin: 10px 0px;
+    margin: 15px 0px;
 }
 
 .contacto1 .info p i{
@@ -529,13 +537,56 @@ main{
 }
 
 .contacto1 .info a{
-    color: rgb(78, 160, 255);
+    color: rgb(250, 252, 255);
     text-decoration: none;
     letter-spacing: 0.5px;
 }
 
-form .input-contacto{
-    padding: 5px 0px;
+.contacto2{
+    grid-column: 2 / 3;
+    justify-self: start;
+    margin-top: 10%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.input-contacto{
+    position: relative;
+}
+
+.input-contacto input{
+    width: 150%;
+    height: 40px;
+    padding: 0 10px;
+    outline: none;
+    background: rgba(70, 70, 70, 0.342);
+    border: 3px solid transparent;
+    color: white;
+}
+
+.input-contacto textarea{
+    width: 150%;
+    height: 140px;
+    padding: 0 10px;
+    outline: none;
+    background: rgba(70, 70, 70, 0.342);
+    border: 3px solid transparent;
+    color: white;
+}
+
+.contacto2 button{
+    width: 150%;
+    border: none;
+    background-color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
 }
 
 /*Fin del main*/
@@ -558,6 +609,7 @@ footer{
 
 .footer1 h2{
     margin: 0;
+    font-size: 1.3rem;
 }
 
 .pago{
@@ -578,7 +630,7 @@ footer{
 .contacto-foot{
     grid-column: -2 / -1;
     justify-self: end;
-    padding-right: 122px;
+    padding-right: 90px;
     padding-top: 7px;
 }
 
