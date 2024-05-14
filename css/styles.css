@@ -326,26 +326,39 @@ footer{
 }
 
 .footer1{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
-.footer2{
-    display: flex;
-    justify-content: space-between;
+.footer1 h2{
+    margin: 0;
 }
 
-.icons{
-    font-size: 20px;
-    padding: 0px 10px;
+.pago{
+    grid-column: 1 / 2;
+}
+
+.redes{
+    grid-column: 3 / 4;
+    justify-self: end;
+    padding-right: 30px;
+}
+
+.envio{
+    grid-column: -4 / -3;
+    padding-top: 7px;
+}
+
+.contacto-foot{
+    grid-column: -2 / -1;
+    justify-self: end;
+    padding-right: 122px;
+    padding-top: 7px;
 }
 
 i{
     color: white;
     padding: 5px;
-}
-
-.contacto-foot{
-    padding-right: 46px;
+    font-size: 20px;
 }
