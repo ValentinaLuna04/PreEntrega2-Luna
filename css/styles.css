@@ -110,6 +110,7 @@ main{
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    margin-top: 15px;
 }
 
 .items-index{
@@ -124,12 +125,12 @@ main{
 }
 
 .item:hover{
-    box-shadow: 0 20px 20px rgba(126, 125, 125, 0.2);
+    box-shadow: 0 10px 15px rgba(126, 125, 125, 0.2);
 }
 
 .item img{
     width: 100%;
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
     transition: all .5s;
@@ -167,6 +168,8 @@ main{
     font-size: 1rem;
     border-radius: 3px;
 }
+
+/*Talles*/
 
 .talles{
     display: flex;
@@ -248,12 +251,15 @@ main{
     color: rgb(204, 204, 204);
 }
 
+/*Fin de talles*/
+
 /*Modals index*/
 
 .modal-body{
     width: 100%;
     background-color: rgb(19, 19, 19);
     color: rgb(19, 19, 19);
+    border-radius: 10px;
 }
 
 .modal-img{
@@ -264,27 +270,211 @@ main{
 
 /*Top*/
 .main-top{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .top1{
-    color: rgb(78, 160, 255);
+    grid-column: 1 / 2;
+    color: rgb(255, 255, 255);
+    padding-top: 40px;
+    margin-top: 45px;
+    margin-left: 40px;
 }
 
 .ul-top1{
     list-style: none;
+    padding: 0;
+    
 }
 
 .a-top1{
     text-decoration: none;
-    color: rgb(78, 160, 255);
+    color: rgb(204, 204, 204);
 }
 
 .top2{
+    grid-column: 2 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    color: rgb(78, 160, 255);
+    color: rgb(255, 255, 255);
+    margin-right: 50px;
 }
+
+.top2 h2{
+    padding: 15px;
+    margin: 0;
+}
+
+.title-section1{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.title-section{
+    margin: 40px;
+}
+
+#blusas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item-blusas{
+    border-radius: 10px;
+    border: 0.5px rgb(19, 19, 19) solid;
+}
+
+.item-blusas:hover{
+    box-shadow: 0 10px 15px rgba(126, 125, 125, 0.2)
+}
+
+.item-blusas img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item-blusas img:hover{
+    transform: scale(1.2);
+}
+
+.item-blusas figure{
+    overflow: hidden;
+}
+
+#remeras{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item-remeras{
+    border-radius: 10px;
+    border: 0.5px rgb(19, 19, 19) solid;
+}
+
+.item-remeras:hover{
+    box-shadow: 0 10px 15px rgba(126, 125, 125, 0.2)
+}
+
+.item-remeras img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item-remeras img:hover{
+    transform: scale(1.2);
+}
+
+.item-remeras figure{
+    overflow: hidden;
+}
+
+#sweaters{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item-sweaters{
+    border-radius: 10px;
+    border: 0.5px rgb(19, 19, 19) solid;
+}
+
+.item-sweaters:hover{
+    box-shadow: 0 10px 15px rgba(126, 125, 125, 0.2)
+}
+
+.item-sweaters img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item-sweaters img:hover{
+    transform: scale(1.2);
+}
+
+.item-sweaters figure{
+    overflow: hidden;
+}
+
+#tops{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item-tops{
+    border-radius: 10px;
+    border: 0.5px rgb(19, 19, 19) solid;
+}
+
+.item-tops:hover{
+    box-shadow: 0 10px 15px rgba(126, 125, 125, 0.2)
+}
+
+.item-tops img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item-tops img:hover{
+    transform: scale(1.2);
+}
+
+.item-tops figure{
+    overflow: hidden;
+}
+
+#vestidos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item-vestidos{
+    border-radius: 10px;
+    border: 0.5px rgb(19, 19, 19) solid;
+}
+
+.item-vestidos:hover{
+    box-shadow: 0 10px 15px rgba(126, 125, 125, 0.2)
+}
+
+.item-vestidos img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item-vestidos img:hover{
+    transform: scale(1.2);
+}
+
+.item-vestidos figure{
+    overflow: hidden;
+}
+
+
+
+
 /*Fin del Top*/
 
 /*Contacto*/
