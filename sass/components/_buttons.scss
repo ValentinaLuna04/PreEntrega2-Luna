@@ -95,7 +95,7 @@ header{
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    transform: scale(0);
+
     transition: bottom 200ms, transform 200ms;
 
     a{
@@ -109,6 +109,3 @@ header{
     bottom: 28px;
 }
 
-#up.show{
-    transform: scale(1);
-}

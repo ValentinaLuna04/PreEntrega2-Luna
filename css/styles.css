@@ -342,7 +342,6 @@ header .nav-container .nav-header #check {
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  transform: scale(0);
   transition: bottom 200ms, transform 200ms;
 }
 #up a {
@@ -353,10 +352,6 @@ header .nav-container .nav-header #check {
 
 #up:hover {
   bottom: 28px;
-}
-
-#up.show {
-  transform: scale(1);
 }
 
 header .carrito-container a .fa-cart-shopping {
@@ -925,7 +920,7 @@ footer nav i {
 }
 @media only screen and (max-width: 540px) {
   .items-index .item {
-    width: 95%;
+    width: 90%;
   }
   .talles .talles-container .talla1 img {
     width: 400px;
@@ -935,6 +930,9 @@ footer nav i {
   }
   .talles .talles-container .talla3 img {
     width: 400px;
+  }
+  .main-top .top2 {
+    margin-right: 0;
   }
 }
 @media only screen and (max-width: 410px) {
