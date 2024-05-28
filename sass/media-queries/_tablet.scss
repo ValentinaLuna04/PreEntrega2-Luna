@@ -204,8 +204,10 @@
 
 @media only screen and (max-width: 590px) {
     //Index
-    .item{
-        width: 85%;
+    .items-index{
+        .item{
+            width: 85%;
+        }
     }
 
     //Footer
@@ -218,8 +220,10 @@
 
 @media only screen and (max-width: 540px){
     //Index
-    .item{
-        width: 95%;
+    .items-index{
+        .item{
+            width: 95%;
+        }
     }
     
     .talles{
