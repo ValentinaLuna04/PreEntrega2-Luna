@@ -1,0 +1,79 @@
+@import "../utilities/variables";
+
+header{
+    justify-content: space-between;
+    background-color: $background-color;
+
+    .header-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-around;
+        align-items: center;
+
+        .buscador{
+            display: flex;
+            justify-content: center;
+
+            .barra-buscadora{
+                color: $font-color;
+                background: none;
+                border: none;
+                border-bottom: 2px $font-color solid;
+            }
+        }
+
+        .logo{
+            display: table-column;
+            align-self: center;
+            justify-self: center;
+
+            .logo-img{
+                width: 200px;
+                padding-top: 10px;
+            }
+
+            .h2-header{
+                color: $font-color;
+                text-align: center;
+                padding-bottom: 13px;
+                margin: 0px;
+            }
+        }
+
+        .carrito-container{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .nav-container{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        border-bottom: 0.5px $font-color solid;
+        border-top: 0.5px $font-color solid;
+
+        .nav-header{
+            display: flex;
+            padding: 10px;
+            justify-content: center;
+
+            .nav-ul{
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                margin: 0px;
+
+                .nav-li{
+                    display: inline-block;
+                    padding: 0px 20px;
+                    
+                    .a-nav{
+                        color: $a-color;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

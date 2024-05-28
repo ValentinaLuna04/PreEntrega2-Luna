@@ -1,0 +1,73 @@
+@import "../utilities/variables";
+
+// Top
+.main-top{
+    .top1{
+        .collapse-top{
+            .d-inline-flex{
+                color: $font-color;
+                #diso{
+                    color: $font-color;
+                    font-size: 1.5rem;
+                    display: none;
+                }
+            }
+    
+            #collapseExample{
+                color: $background-color;
+                .card-body{
+                    background-color: $background-color;
+                    ul{
+                        list-style: none;
+                        padding: 0; 
+                        li{
+                            a{
+                                text-decoration: none;
+                                color: $font-color;
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Bottom
+#collapseExample1{
+    color: $background-color;
+    .card-body{
+        background-color: $background-color;
+        ul{
+            list-style: none;
+            padding: 0; 
+            li{
+                a{
+                    text-decoration: none;
+                    color: $a-color;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}
+
+//Accessories
+#collapseExample2{
+    color: $background-color;
+    .card-body{
+        background-color: $background-color;
+        ul{
+            list-style: none;
+            padding: 0; 
+            li{
+                a{
+                    text-decoration: none;
+                    color: $a-color;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}

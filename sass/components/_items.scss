@@ -1,0 +1,212 @@
+@import "../utilities/variables";
+
+// Mixins
+
+@mixin border-i{
+    border-radius: 10px;
+    border: 0.5px $item-border;
+}
+
+@mixin img-item{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+@mixin figure-item{
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+// Index
+
+.items-index{
+    .item{
+        border-radius: 10px;
+        border: 0.5px $item-border;
+        width: 90%;
+        justify-self: center;
+
+        img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+            transition: all .5s;
+        }
+        img:hover{
+            transform: scale(1.2);
+        }
+        figure{
+            overflow: hidden;
+            border-radius: 10px 10px 0 0;
+        }
+    }
+    .item:hover{
+        box-shadow: 0 10px 15px $shadow-color;
+    }
+}
+
+// Top
+
+.main-top{
+    .top2{
+        #blusas{
+            .item-blusas{
+                @include border-i();
+
+                img{
+                    @include img-item();
+                }
+                img:hover{
+                    transform: scale(1.2);
+                }
+                
+                figure{
+                    @include figure-item();
+                }
+            }
+            .item-blusas:hover{
+                box-shadow: 0 10px 15px $shadow-color
+            }
+        }
+
+        #remeras{
+            .item-remeras{
+                @include border-i();
+
+                img{
+                    @include img-item();
+                }
+                img:hover{
+                    transform: scale(1.2);
+                }
+
+                figure{
+                    @include figure-item();
+                }
+            }
+            .item-remeras:hover{
+                box-shadow: 0 10px 15px $shadow-color
+            }
+        }
+
+        #sweaters{
+            .item-sweaters{
+                @include border-i();
+
+                img{
+                    @include img-item();
+                }
+                img:hover{
+                    transform: scale(1.2);
+                }
+
+                figure{
+                    @include figure-item();
+                }
+            }
+            .item-sweaters:hover{
+                box-shadow: 0 10px 15px $shadow-color
+            }
+        }
+
+        #tops{
+            .item-tops{
+                @include border-i();
+
+                img{
+                    @include img-item();
+                }
+                img:hover{
+                    transform: scale(1.2);
+                }
+
+                figure{
+                    @include figure-item();
+                }
+            }
+            .item-tops:hover{
+                box-shadow: 0 10px 15px $shadow-color
+            }
+        }
+
+        #vestidos{
+            .item-vestidos{
+                @include border-i();
+
+                img{
+                    @include img-item();
+                }
+                img:hover{
+                    transform: scale(1.2);
+                }
+
+                figure{
+                    @include figure-item();
+                }
+            }
+            .item-vestidos:hover{
+                box-shadow: 0 10px 15px $shadow-color
+            }
+        }
+    }
+}
+
+// Bottom, accessories
+
+.item-blusas{
+    @include border-i();
+
+    img{
+        @include img-item();
+    }
+    img:hover{
+        transform: scale(1.2);
+    }
+    
+    figure{
+        @include figure-item();
+    }
+}
+.item-blusas:hover{
+    box-shadow: 0 10px 15px $shadow-color
+}
+
+.item-remeras{
+    @include border-i();
+
+    img{
+        @include img-item();
+    }
+    img:hover{
+        transform: scale(1.2);
+    }
+
+    figure{
+        @include figure-item();
+    }
+}
+.item-remeras:hover{
+    box-shadow: 0 10px 15px $shadow-color
+}
+
+.item-info{
+    color: $font-color;
+    padding: 0px 30px;
+    padding-bottom: 10px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+
+    .h3-index{
+        margin: 0%;
+        font-size: 1.2rem;
+    }
+
+    .precio{
+        margin-bottom: 5px;
+    }
+}

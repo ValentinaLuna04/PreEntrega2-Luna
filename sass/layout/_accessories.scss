@@ -1,0 +1,21 @@
+@import "../utilities/variables";
+
+// Mixins
+
+@mixin item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#uñas{
+    @include item();
+}
+
+#bags{
+    @include item();
+}
+
+#minibags{
+    @include item();
+}

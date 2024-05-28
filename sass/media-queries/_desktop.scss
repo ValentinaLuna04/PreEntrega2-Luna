@@ -1,0 +1,119 @@
+@import "../utilities/variables";
+
+@media only screen and (max-width:1380px) {
+    //Index
+    .items-index{
+        display: block;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .item{
+            width: 85%;
+            justify-self: center;  
+        }
+    }
+}
+
+@media only screen and (max-width:1150px) {
+    //Top
+    .main-top{
+        .top2{
+            margin-right: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width:1040px){
+    //Index
+    .talles{
+        .talles-container{
+            .talla2{
+                display: block;
+            }
+            .talla3{
+                display: block;
+            }
+        }
+    }
+
+    
+    .main-top{
+        .top2{
+            //Top
+            #blusas{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            #remeras{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            #sweaters{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            #tops{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            #vestidos{
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            //Bottom
+            #bermudas{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            #pantalones{
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            //Accessories
+            #minibags{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            #bags{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            #uñas{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1020px) {
+    //Index
+
+    .h2-inicio{
+        margin: 50px;
+        margin-top: 40px;
+    }
+
+    
+
+    //Contacto
+    .container-contacto{
+        display: block;
+
+        .contacto2{
+            margin-top: 40px;
+
+            form{
+                .input-contacto{
+                    input{
+                        width: 100%;
+                    }
+    
+                    textarea{
+                        width: 100%;
+                    }    
+                }
+
+                button{
+                    width: 99%;
+                }
+            }
+        }
+    }
+
+    #up{
+        right: 19px;
+    }
+}

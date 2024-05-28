@@ -1,0 +1,50 @@
+@import "../utilities/variables";
+
+// Iconos header
+
+header{
+    .carrito-container{
+        a{
+            .fa-cart-shopping{
+                color: $font-color;
+                font-size: 19px;
+            }
+        }
+    }
+
+    .nav-container{
+            
+
+            .f1{
+                justify-self: end;
+                display: none;
+                color: $font-color;
+                text-decoration: none;
+            }
+    }
+
+}
+
+// Contacto
+
+.contacto1{
+    .info{
+        p{
+            i{
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+// Footer
+
+footer{
+    nav{
+        i{
+            color: $font-color;
+            padding: 5px;
+            font-size: 20px;
+        }
+    }
+}

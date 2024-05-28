@@ -1,873 +1,979 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: "Nunito Sans", sans-serif;
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
-/*Comienzo del header*/
-header{
-    justify-content: space-between;
-    background-color: black;
+body {
+  background-color: black;
 }
 
-.header-container{
+main {
+  background-color: black;
+  padding: 30px;
+  margin: 0px;
+}
+
+header {
+  justify-content: space-between;
+  background-color: black;
+}
+header .header-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  align-items: center;
+}
+header .header-container .buscador {
+  display: flex;
+  justify-content: center;
+}
+header .header-container .buscador .barra-buscadora {
+  color: rgb(255, 255, 255);
+  background: none;
+  border: none;
+  border-bottom: 2px rgb(255, 255, 255) solid;
+}
+header .header-container .logo {
+  display: table-column;
+  align-self: center;
+  justify-self: center;
+}
+header .header-container .logo .logo-img {
+  width: 200px;
+  padding-top: 10px;
+}
+header .header-container .logo .h2-header {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-bottom: 13px;
+  margin: 0px;
+}
+header .header-container .carrito-container {
+  display: flex;
+  justify-content: center;
+}
+header .nav-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-bottom: 0.5px rgb(255, 255, 255) solid;
+  border-top: 0.5px rgb(255, 255, 255) solid;
+}
+header .nav-container .nav-header {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+}
+header .nav-container .nav-header .nav-ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+}
+header .nav-container .nav-header .nav-ul .nav-li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+header .nav-container .nav-header .nav-ul .nav-li .a-nav {
+  color: rgb(204, 204, 204);
+  text-decoration: none;
+}
+
+.h2-inicio {
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+
+.items-index {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.talles {
+  display: flex;
+  flex-direction: column;
+}
+.talles h2 {
+  color: rgb(255, 255, 255);
+  margin: 50px;
+  align-self: center;
+}
+.talles .talles-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.talles div {
+  padding: 10px;
+}
+
+.dis-d {
+  display: none;
+}
+.dis-d .dis {
+  display: none;
+  padding: 15px;
+  margin: 0;
+  color: rgb(255, 255, 255);
+}
+
+.main-top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.main-top .top1 {
+  grid-column: 1/2;
+  color: rgb(255, 255, 255);
+  padding-top: 40px;
+  margin-top: 45px;
+  margin-left: 40px;
+}
+.main-top .top1 .ul-top1 {
+  list-style: none;
+  padding: 0;
+}
+.main-top .top1 .ul-top1 li .a-top1 {
+  text-decoration: none;
+  color: rgb(204, 204, 204);
+}
+.main-top .top2 {
+  grid-column: 2/5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  margin-right: 50px;
+}
+.main-top .top2 h2 {
+  padding: 15px;
+  margin: 0;
+}
+.main-top .top2 .title-section1 {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.main-top .top2 .title-section {
+  margin: 40px;
+}
+.main-top .top2 #blusas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.main-top .top2 #remeras {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.main-top .top2 #sweaters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.main-top .top2 #tops {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.main-top .top2 #vestidos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+#bermudas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+#pantalones {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+#uñas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+#bags {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+#minibags {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.container-contacto {
+  color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 1.2rem;
+  margin-bottom: 7%;
+}
+.container-contacto .contacto1 {
+  grid-column: 1/2;
+  justify-self: center;
+  margin-top: 10%;
+}
+.container-contacto .contacto1 .info p {
+  margin: 15px 0px;
+}
+.container-contacto .contacto1 .info p a {
+  color: rgb(204, 204, 204);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+.container-contacto .contacto2 {
+  grid-column: 2/3;
+  justify-self: start;
+  margin-top: 10%;
+}
+.container-contacto .contacto2 form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+
+footer {
+  color: rgb(255, 255, 255);
+  background-color: black;
+  font-size: small;
+  border-top: 0.5px rgb(255, 255, 255) solid;
+  padding: 15px;
+}
+footer nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+footer nav h2 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+footer nav .pago {
+  grid-column: 1/2;
+}
+footer nav .redes {
+  grid-column: 3/4;
+  justify-self: end;
+  padding-right: 30px;
+}
+footer nav .envio {
+  grid-column: -4/-3;
+  padding-top: 7px;
+}
+footer nav .contacto-foot {
+  grid-column: -2/-1;
+  justify-self: end;
+  padding-right: 90px;
+  padding-top: 7px;
+}
+
+header .buscador button {
+  background-color: black;
+  border: none;
+  border-bottom: 2px rgb(255, 255, 255) solid;
+}
+header .buscador button .fa-magnifying-glass {
+  color: white;
+}
+header .nav-container .nav-header .check-btn {
+  display: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+header .nav-container .nav-header #check {
+  display: none;
+}
+
+.items-index .item .item-info button {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  font-size: 1rem;
+  border-radius: 3px;
+}
+
+.modal-content .modal-body .btn-close {
+  color: rgb(255, 255, 255);
+}
+
+.item-info button {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  font-size: 1rem;
+  border-radius: 3px;
+}
+
+.container-contacto .contacto2 form button {
+  width: 150%;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  font-size: 1rem;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+#up {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(39, 39, 39);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  transform: scale(0);
+  transition: bottom 200ms, transform 200ms;
+}
+#up a {
+  text-decoration: none;
+  color: rgb(204, 204, 204);
+  padding: 10px;
+}
+
+#up:hover {
+  bottom: 28px;
+}
+
+#up.show {
+  transform: scale(1);
+}
+
+header .carrito-container a .fa-cart-shopping {
+  color: rgb(255, 255, 255);
+  font-size: 19px;
+}
+header .nav-container .f1 {
+  justify-self: end;
+  display: none;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.contacto1 .info p i {
+  padding-right: 10px;
+}
+
+footer nav i {
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  font-size: 20px;
+}
+
+.items-index .item {
+  border-radius: 10px;
+  border: 0.5px rgb(19, 19, 19) solid;
+  width: 90%;
+  justify-self: center;
+}
+.items-index .item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.5s;
+}
+.items-index .item img:hover {
+  transform: scale(1.2);
+}
+.items-index .item figure {
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+.items-index .item:hover {
+  box-shadow: 0 10px 15px rgba(126, 125, 125, 0.2);
+}
+
+.main-top .top2 #blusas .item-blusas {
+  border-radius: 10px;
+  border: 0.5px rgb(19, 19, 19) solid;
+}
+.main-top .top2 #blusas .item-blusas img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.5s;
+}
+.main-top .top2 #blusas .item-blusas img:hover {
+  transform: scale(1.2);
+}
+.main-top .top2 #blusas .item-blusas figure {
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+.main-top .top2 #blusas .item-blusas:hover {
+  box-shadow: 0 10px 15px rgba(126, 125, 125, 0.2);
+}
+.main-top .top2 #remeras .item-remeras {
+  border-radius: 10px;
+  border: 0.5px rgb(19, 19, 19) solid;
+}
+.main-top .top2 #remeras .item-remeras img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.5s;
+}
+.main-top .top2 #remeras .item-remeras img:hover {
+  transform: scale(1.2);
+}
+.main-top .top2 #remeras .item-remeras figure {
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+.main-top .top2 #remeras .item-remeras:hover {
+  box-shadow: 0 10px 15px rgba(126, 125, 125, 0.2);
+}
+.main-top .top2 #sweaters .item-sweaters {
+  border-radius: 10px;
+  border: 0.5px rgb(19, 19, 19) solid;
+}
+.main-top .top2 #sweaters .item-sweaters img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.5s;
+}
+.main-top .top2 #sweaters .item-sweaters img:hover {
+  transform: scale(1.2);
+}
+.main-top .top2 #sweaters .item-sweaters figure {
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+.main-top .top2 #sweaters .item-sweaters:hover {
+  box-shadow: 0 10px 15px rgba(126, 125, 125, 0.2);
+}
+.main-top .top2 #tops .item-tops {
+  border-radius: 10px;
+  border: 0.5px rgb(19, 19, 19) solid;
+}
+.main-top .top2 #tops .item-tops img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.5s;
+}
+.main-top .top2 #tops .item-tops img:hover {
+  transform: scale(1.2);
+}
+.main-top .top2 #tops .item-tops figure {
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+.main-top .top2 #tops .item-tops:hover {
+  box-shadow: 0 10px 15px rgba(126, 125, 125, 0.2);
+}
+.main-top .top2 #vestidos .item-vestidos {
+  border-radius: 10px;
+  border: 0.5px rgb(19, 19, 19) solid;
+}
+.main-top .top2 #vestidos .item-vestidos img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.5s;
+}
+.main-top .top2 #vestidos .item-vestidos img:hover {
+  transform: scale(1.2);
+}
+.main-top .top2 #vestidos .item-vestidos figure {
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+.main-top .top2 #vestidos .item-vestidos:hover {
+  box-shadow: 0 10px 15px rgba(126, 125, 125, 0.2);
+}
+
+.item-blusas {
+  border-radius: 10px;
+  border: 0.5px rgb(19, 19, 19) solid;
+}
+.item-blusas img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.5s;
+}
+.item-blusas img:hover {
+  transform: scale(1.2);
+}
+.item-blusas figure {
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.item-blusas:hover {
+  box-shadow: 0 10px 15px rgba(126, 125, 125, 0.2);
+}
+
+.item-remeras {
+  border-radius: 10px;
+  border: 0.5px rgb(19, 19, 19) solid;
+}
+.item-remeras img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.5s;
+}
+.item-remeras img:hover {
+  transform: scale(1.2);
+}
+.item-remeras figure {
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.item-remeras:hover {
+  box-shadow: 0 10px 15px rgba(126, 125, 125, 0.2);
+}
+
+.item-info {
+  color: rgb(255, 255, 255);
+  padding: 0px 30px;
+  padding-bottom: 10px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+}
+.item-info .h3-index {
+  margin: 0%;
+  font-size: 1.2rem;
+}
+.item-info .precio {
+  margin-bottom: 5px;
+}
+
+.talles .talles-container .talla1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.talles .talles-container .talla1 h4 {
+  color: rgb(204, 204, 204);
+  align-self: center;
+}
+.talles .talles-container .talla2, .talles .talles-container .talla3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.talles .talles-container .talla2 img, .talles .talles-container .talla3 img {
+  width: 500px;
+  box-shadow: 0px 10px 20px rgba(126, 125, 125, 0.2);
+}
+.talles .talles-container .talla2 div, .talles .talles-container .talla3 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.talles .talles-container .talla2 h4, .talles .talles-container .talla3 h4 {
+  color: rgb(204, 204, 204);
+  align-self: center;
+}
+.modal-content {
+  background-color: rgb(19, 19, 19);
+  border-radius: 10px;
+}
+.modal-content .modal-body {
+  width: 100%;
+  background-color: rgb(19, 19, 19);
+  color: rgb(19, 19, 19);
+  border-radius: 10px;
+}
+.modal-content .modal-body .modal-img {
+  width: 100%;
+  height: 100%;
+}
+
+.container-contacto .contacto2 form .input-contacto {
+  position: relative;
+}
+.container-contacto .contacto2 form .input-contacto input {
+  width: 150%;
+  height: 40px;
+  padding: 0 10px;
+  outline: none;
+  background: rgba(70, 70, 70, 0.342);
+  border: 3px solid transparent;
+  color: rgb(255, 255, 255);
+}
+.container-contacto .contacto2 form .input-contacto textarea {
+  width: 150%;
+  height: 140px;
+  padding: 0 10px;
+  outline: none;
+  background: rgba(70, 70, 70, 0.342);
+  border: 3px solid transparent;
+  color: rgb(255, 255, 255);
+}
+
+.main-top .top1 .collapse-top .d-inline-flex {
+  color: rgb(255, 255, 255);
+}
+.main-top .top1 .collapse-top .d-inline-flex #diso {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  display: none;
+}
+.main-top .top1 .collapse-top #collapseExample {
+  color: black;
+}
+.main-top .top1 .collapse-top #collapseExample .card-body {
+  background-color: black;
+}
+.main-top .top1 .collapse-top #collapseExample .card-body ul {
+  list-style: none;
+  padding: 0;
+}
+.main-top .top1 .collapse-top #collapseExample .card-body ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+}
+
+#collapseExample1 {
+  color: black;
+}
+#collapseExample1 .card-body {
+  background-color: black;
+}
+#collapseExample1 .card-body ul {
+  list-style: none;
+  padding: 0;
+}
+#collapseExample1 .card-body ul li a {
+  text-decoration: none;
+  color: rgb(204, 204, 204);
+  font-size: 1.1rem;
+}
+
+#collapseExample2 {
+  color: black;
+}
+#collapseExample2 .card-body {
+  background-color: black;
+}
+#collapseExample2 .card-body ul {
+  list-style: none;
+  padding: 0;
+}
+#collapseExample2 .card-body ul li a {
+  text-decoration: none;
+  color: rgb(204, 204, 204);
+  font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 1380px) {
+  .items-index {
+    display: block;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-around;
-    align-items: center;
-}
-
-.buscador{
-    display: flex;
-    justify-content: center;
-}
-
-.barra-buscadora{
-    color: white;
-    background: none;
-    border: none;
-    border-bottom: 2px white solid;
-}
-
-.button-buscador{
-    background-color: black;
-    border: none;
-    border-bottom: 2px white solid;
-}
-
-.fa-magnifying-glass{
-    color: white;
-}
-
-.logo{
-    display: table-column;
-    align-self: center;
+  }
+  .items-index .item {
+    width: 85%;
     justify-self: center;
+  }
 }
-
-.logo-img{
-    width: 200px;
-    padding-top: 10px;
+@media only screen and (max-width: 1150px) {
+  .main-top .top2 {
+    margin-right: 30px;
+  }
 }
-
-.h2-header{
-    color: white;
-    text-align: center;
-    padding-bottom: 13px;
-    margin: 0px;
+@media only screen and (max-width: 1040px) {
+  .talles .talles-container .talla2, .talles .talles-container .talla3 {
+    display: block;
+  }
+  .talles .talles-container .talla3 {
+    display: block;
+  }
+  .main-top .top2 #blusas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main-top .top2 #remeras {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main-top .top2 #sweaters {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main-top .top2 #tops {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main-top .top2 #vestidos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main-top .top2 #bermudas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main-top .top2 #pantalones {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main-top .top2 #minibags {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main-top .top2 #bags {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main-top .top2 #uñas {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-
-.carrito-container{
-    display: flex;
-    justify-content: center;
-}
-
-.fa-cart-shopping{
-    color: white;
-    font-size: 19px;
-}
-
-.nav-container{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    border-bottom: 0.5px white solid;
-    border-top: 0.5px white solid;
-}
-
-.nav-header{
-    display: flex;
-    padding: 10px;
-    justify-content: center;
-}
-
-.check-btn{
-    display: none;
-    color: white;
-    cursor: pointer;
-}
-
-#check{
-    display: none;
-}
-
-.nav-ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    margin: 0px;
-}
-
-.nav-li{
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-
-.a-nav{
-    color: white;
-    text-decoration: none;
-}
-
-.f1{
-    justify-self: end;
-    display: none;
-}
-
-/*Fin del header*/
-
-/*Comienzo del main*/
-
-main{
-    background-color: black;
-    padding: 30px;
-    margin: 0px;
-}
-
-.h2-inicio{
-    color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    margin-top: 15px;
-}
-
-.items-index{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.item{
-    border-radius: 10px;
-    border: 0.5px rgb(19, 19, 19) solid;
-    width: 90%;
-    justify-self: center;
-}
-
-.item:hover{
-    box-shadow: 0 10px 15px rgba(126, 125, 125, 0.2);
-}
-
-.item img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    transition: all .5s;
-}
-
-.item img:hover{
-    transform: scale(1.2);
-}
-
-.item figure{
-    overflow: hidden;
-}
-
-.item-info{
-    color: rgb(255, 255, 255);
-    padding: 0px 30px;
-    padding-bottom: 10px;
-    line-height: 2;
-    display: flex;
-    flex-direction: column;
-}
-
-.h3-index{
-    margin: 0%;
-    font-size: 1.2rem;
-}
-
-.precio{
-    margin-bottom: 5px;
-}
-
-.item-info button{
-    border: none;
-    background-color: white;
-    font-size: 1rem;
-    border-radius: 3px;
-}
-
-/*Talles*/
-
-.talles{
-    display: flex;
-    flex-direction: column;
-}
-
-.talles h2{
-    color: white;
+@media only screen and (max-width: 1020px) {
+  .h2-inicio {
     margin: 50px;
-    align-self: center;
-}
-
-.talles-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.talles-container div{
-    padding: 10px;
-}
-
-.talla1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.talla1 h4{
-    color: rgb(204, 204, 204);
-    align-self: center;
-}
-
-.talla1 img{
-    box-shadow: 10px 10px 20px rgba(126, 125, 125, 0.288);
-}
-
-.talla2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.talla2 img{
-    width: 500px;
-    box-shadow: 0px 10px 20px rgba(126, 125, 125, 0.288);
-}
-
-.talla2 div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-}
-
-.talla2 h4{
-    color: rgb(204, 204, 204);
-}
-
-.talla3{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.talla3 img{
-    width: 500px;
-    box-shadow: 0px 10px 20px rgba(126, 125, 125, 0.288);
-}
-
-.talla3 div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-}
-
-.talla3 h4{
-    color: rgb(204, 204, 204);
-}
-
-/*Fin de talles*/
-
-/*Modals index*/
-
-.modal-content{
-    background-color: rgb(19, 19, 19);
-    border-radius: 10px;
-}
-
-.modal-body{
+    margin-top: 40px;
+  }
+  .container-contacto {
+    display: block;
+  }
+  .container-contacto .contacto2 {
+    margin-top: 40px;
+  }
+  .container-contacto .contacto2 form .input-contacto input {
     width: 100%;
-    background-color: rgb(19, 19, 19);
-    color: rgb(19, 19, 19);
-}
-
-.modal-img{
+  }
+  .container-contacto .contacto2 form .input-contacto textarea {
     width: 100%;
-    height: 100%;
+  }
+  .container-contacto .contacto2 form button {
+    width: 99%;
+  }
+  #up {
+    right: 19px;
+  }
 }
-
-
-/*Top*/
-.main-top{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.top1{
-    grid-column: 1 / 2;
-    color: rgb(255, 255, 255);
-    padding-top: 40px;
-    margin-top: 45px;
-    margin-left: 40px;
-}
-
-.ul-top1{
-    list-style: none;
-    padding: 0;
-    
-}
-
-.a-top1{
-    text-decoration: none;
-    color: rgb(204, 204, 204);
-}
-
-.top2{
-    grid-column: 2 / 5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: rgb(255, 255, 255);
-    margin-right: 50px;
-}
-
-.top2 h2{
-    padding: 15px;
-    margin: 0;
-}
-
-.title-section1{
-    margin-top: 10px;
-    margin-bottom: 40px;
-}
-
-.title-section{
-    margin: 40px;
-}
-
-#blusas{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.item-blusas{
-    border-radius: 10px;
-    border: 0.5px rgb(19, 19, 19) solid;
-}
-
-.item-blusas:hover{
-    box-shadow: 0 10px 15px rgba(126, 125, 125, 0.2)
-}
-
-.item-blusas img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    transition: all .5s;
-}
-
-.item-blusas img:hover{
-    transform: scale(1.2);
-}
-
-.item-blusas figure{
-    overflow: hidden;
-}
-
-#remeras{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.item-remeras{
-    border-radius: 10px;
-    border: 0.5px rgb(19, 19, 19) solid;
-}
-
-.item-remeras:hover{
-    box-shadow: 0 10px 15px rgba(126, 125, 125, 0.2)
-}
-
-.item-remeras img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    transition: all .5s;
-}
-
-.item-remeras img:hover{
-    transform: scale(1.2);
-}
-
-.item-remeras figure{
-    overflow: hidden;
-}
-
-#sweaters{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.item-sweaters{
-    border-radius: 10px;
-    border: 0.5px rgb(19, 19, 19) solid;
-}
-
-.item-sweaters:hover{
-    box-shadow: 0 10px 15px rgba(126, 125, 125, 0.2)
-}
-
-.item-sweaters img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    transition: all .5s;
-}
-
-.item-sweaters img:hover{
-    transform: scale(1.2);
-}
-
-.item-sweaters figure{
-    overflow: hidden;
-}
-
-#tops{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.item-tops{
-    border-radius: 10px;
-    border: 0.5px rgb(19, 19, 19) solid;
-}
-
-.item-tops:hover{
-    box-shadow: 0 10px 15px rgba(126, 125, 125, 0.2)
-}
-
-.item-tops img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    transition: all .5s;
-}
-
-.item-tops img:hover{
-    transform: scale(1.2);
-}
-
-.item-tops figure{
-    overflow: hidden;
-}
-
-#vestidos{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.item-vestidos{
-    border-radius: 10px;
-    border: 0.5px rgb(19, 19, 19) solid;
-}
-
-.item-vestidos:hover{
-    box-shadow: 0 10px 15px rgba(126, 125, 125, 0.2)
-}
-
-.item-vestidos img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    transition: all .5s;
-}
-
-.item-vestidos img:hover{
-    transform: scale(1.2);
-}
-
-.item-vestidos figure{
-    overflow: hidden;
-}
-
-/*Fin del Top*/
-
-/*Bottom*/
-
-#bermudas{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-#pantalones{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-/*Accessories*/
-
-#minibags{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-#bags{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-#uñas{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-/*Contacto*/
-.container-contacto{
-    color: rgb(255, 255, 255);
+@media only screen and (max-width: 950px) {
+  .items-index {
+    display: block;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    font-size: 1.2rem;
-    margin-bottom: 7%;
-}
-
-.contacto1{
-    grid-column: 1 / 2;
+  }
+  .items-index .item {
+    width: 90%;
     justify-self: center;
-    margin-top: 10%;
+  }
 }
-
-.contacto1 .info p{
-    margin: 15px 0px;
-}
-
-.contacto1 .info p i{
-    padding-right: 10px;
-}
-
-.contacto1 .info a{
-    color: rgb(250, 252, 255);
-    text-decoration: none;
-    letter-spacing: 0.5px;
-}
-
-.contacto2{
-    grid-column: 2 / 3;
-    justify-self: start;
-    margin-top: 10%;
-}
-
-form{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-}
-
-.input-contacto{
-    position: relative;
-}
-
-.input-contacto input{
-    width: 150%;
-    height: 40px;
-    padding: 0 10px;
-    outline: none;
-    background: rgba(70, 70, 70, 0.342);
-    border: 3px solid transparent;
-    color: white;
-}
-
-.input-contacto textarea{
-    width: 150%;
-    height: 140px;
-    padding: 0 10px;
-    outline: none;
-    background: rgba(70, 70, 70, 0.342);
-    border: 3px solid transparent;
-    color: white;
-}
-
-.contacto2 button{
-    width: 150%;
-    border: none;
-    background-color: white;
-    font-size: 1rem;
-    border: none;
-    border-radius: 3px;
-    padding: 5px;
-}
-
-/*Fin del main*/
-
-/*Inicio del footer*/
-
-footer{
-    color: white;
-    background-color: black;
-    font-size: small;
-    border-top: 0.5px white solid;
-    padding: 15px;
-}
-
-.footer1{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
-
-.footer1 h2{
-    margin: 0;
-    font-size: 1.3rem;
-}
-
-.pago{
-    grid-column: 1 / 2;
-}
-
-.redes{
-    grid-column: 3 / 4;
-    justify-self: end;
-    padding-right: 30px;
-}
-
-.envio{
-    grid-column: -4 / -3;
-    padding-top: 7px;
-}
-
-.contacto-foot{
-    grid-column: -2 / -1;
-    justify-self: end;
-    padding-right: 90px;
-    padding-top: 7px;
-}
-
-i{
-    color: white;
-    padding: 5px;
-    font-size: 20px;
-}
-
-
-/*Responsive*/
-
-@media only screen and (max-width:1380px) {
-    .items-index{
-        display: block;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .item{
-        width: 85%;
-        justify-self: center;
-        
-    }
-}
-
-@media only screen and (max-width:1040px){
-    .talla2{
-        display: block;
-    }
-
-    .talla3{
-        display: block;
-    }
-}
-
-@media only screen and (max-width:1020px) {
-    /*index*/
-
-    .h2-inicio{
-        margin: 50px;
-        margin-top: 40px;
-    }
-
-    /*Contacto*/
-    .container-contacto{
-        display: block;
-    }
-
-    .contacto2{
-        margin-top: 40px;
-    }
-
-    .input-contacto input{
-        width: 100%;
-    }
-
-    .input-contacto textarea{
-        width: 100%;
-    }
-
-    .contacto2 button{
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 950px){
-    .items-index{
-        display: block;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .item{
-        width: 90%;
-        justify-self: center;
-    }
-}
-
 @media only screen and (max-width: 800px) {
-    .header-container{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "logo logo logo"
-        "buscador buscador buscador"
-        "carrito-container carrito-container carrito-container"
-        ;
-        margin-bottom: 20px;
-    }
-
-    .logo{
-        grid-area: logo;
-    }
-
-    .buscador{
-        grid-area: buscador;
-    }
-
-    .carrito-container{
-        grid-area: carrito-conteiner;
-    }
-
-    .nav-container{
-        justify-content: space-between;
-    }
-    
-    .nav-header{
-        justify-content: center;
-    }
-
-    .nav-header label{
-        display: initial;
-        color: white;
-        justify-self: start;
-    }
-
-    .check-btn i{
-        font-size: 1.5rem;
-    }
-
-    .nav-ul{
-        position: absolute;
-        top: 105%;
-        left: 0.5px;
-        flex-direction: column;
-        background-color: black;
-        padding-right: 20px;
-        margin: 5px;
-        width: 50%;
-        display: none;
-    }
-
-    .nav-li{
-        width: 100%;
-        padding: 10px;
-    }
-
-    #check:checked ~ .nav-ul{
-        display: initial;
-    }
-
-    .f1{
-        display: initial;
-        margin-top: 12px;
-        margin-right: 8px;
-    }
-
-    .carrito-container a{
-        display: none;
-    }
+  header .header-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "logo logo logo" "buscador buscador buscador" "carrito-container carrito-container carrito-container";
+    margin-bottom: 20px;
+  }
+  header .header-container .buscador {
+    grid-area: buscador;
+  }
+  header .header-container .logo {
+    grid-area: logo;
+  }
+  header .header-container .carrito-container {
+    grid-area: carrito-conteiner;
+  }
+  header .header-container .carrito-container a {
+    display: none;
+  }
+  header .nav-container {
+    justify-content: space-between;
+  }
+  header .nav-container .nav-header {
+    justify-content: center;
+  }
+  header .nav-container .nav-header .check-btn {
+    display: initial;
+    color: rgb(255, 255, 255);
+    justify-self: start;
+  }
+  header .nav-container .nav-header .check-btn i {
+    font-size: 1.5rem;
+  }
+  header .nav-container .nav-header .nav-ul {
+    position: absolute;
+    top: 105%;
+    left: 0.5px;
+    flex-direction: column;
+    background-color: black;
+    padding-right: 20px;
+    margin: 5px;
+    width: 50%;
+    display: none;
+  }
+  header .nav-container .nav-header .nav-ul .nav-li {
+    width: 100%;
+    padding: 10px;
+  }
+  header .nav-container .nav-header #check:checked ~ .nav-ul {
+    display: initial;
+  }
+  header .nav-container .f1 {
+    display: initial;
+    margin-top: 12px;
+    margin-right: 8px;
+  }
+  .main-top .top2 #blusas {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .main-top .top2 #remeras {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .main-top .top2 #sweaters {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .main-top .top2 #tops {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .main-top .top2 #vestidos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .main-top .top2 #bermudas {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .main-top .top2 #pantalones {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .main-top .top2 #minibags {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .main-top .top2 #bags {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .main-top .top2 #uñas {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
-
-@media only screen and (max-width: 740px){
-    .items-index{
-        display: block;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .item{
-        width: 60%;
-        justify-self: center;
-    }
-    
-    .talla1 img{
-        width: 100%;
-    }
+@media only screen and (max-width: 740px) {
+  .items-index {
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .items-index .item {
+    width: 60%;
+    justify-self: center;
+  }
+  .talla1 img {
+    width: 100%;
+  }
 }
-
+@media only screen and (max-width: 680px) {
+  .main-top .top2 {
+    margin-right: 10px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .dis-d {
+    display: flex;
+    justify-content: center;
+  }
+  .dis-d .dis {
+    display: initial;
+  }
+  .main-top {
+    display: block;
+  }
+  .main-top .top1 {
+    margin-top: 0;
+    padding-top: 25px;
+  }
+  .main-top .top1 h3 {
+    display: none;
+  }
+  .main-top .top1 .ul-top1 {
+    display: none;
+  }
+  .main-top .top1 .collapse-top .d-inline-flex #diso {
+    display: initial;
+  }
+  .main-top .top2 .h2-top2 {
+    display: none;
+  }
+}
 @media only screen and (max-width: 590px) {
-    .item{
-        width: 85%;
-    }
-
-    .footer1{
-        display: block;
-        justify-content: center;
-    }
+  .item {
+    width: 85%;
+  }
+  footer .footer1 {
+    display: block;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .item {
+    width: 95%;
+  }
+  .talles .talles-container .talla1 img {
+    width: 400px;
+  }
+  .talles .talles-container .talla2 img, .talles .talles-container .talla3 img {
+    width: 400px;
+  }
+  .talles .talles-container .talla3 img {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .talles .talles-container .talla1 img {
+    width: 320px;
+  }
+  .talles .talles-container .talla2 img, .talles .talles-container .talla3 img {
+    width: 320px;
+  }
+  .talles .talles-container .talla3 img {
+    width: 320px;
+  }
+}
+@media only screen and (max-width: 404px) {
+  .h2-inicio {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .talles .talles-container .talla1 img {
+    width: 260px;
+  }
+  .talles .talles-container .talla2 img, .talles .talles-container .talla3 img {
+    width: 260px;
+  }
+  .talles .talles-container .talla3 img {
+    width: 260px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .talles .talles-container .talla1 img {
+    width: 230px;
+  }
+  .talles .talles-container .talla2 img, .talles .talles-container .talla3 img {
+    width: 230px;
+  }
+  .talles .talles-container .talla3 img {
+    width: 230px;
+  }
 }
 
-@media only screen and (max-width: 540px){
-    .talles-container img{
-        width: 400px;
-    }
-}
-
-
-@media only screen and (max-width: 540px){
-    .item{
-        width: 95%;
-    }
-    .talles-container img{
-        width: 360px;
-    }
-}
-
-@media only screen and (max-width: 410px){
-    .talles-container img{
-        width: 320px;
-    }
-}
-
-@media only screen and (max-width: 404px){
-    .h2-inicio{
-        text-align: center;
-    }
-}
-
-@media only screen and (max-width: 350px){
-    .talles-container img{
-        width: 260px;
-    }
-}
-
-@media only screen and (max-width: 300px){
-    .talles-container img{
-        width: 230px;
-    }
-}
+/*# sourceMappingURL=styles.css.map */

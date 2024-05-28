@@ -1,0 +1,36 @@
+@import "../utilities/variables";
+
+.h2-inicio{
+    color: $font-color;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.items-index{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.talles{
+    display: flex;
+    flex-direction: column;
+    
+    h2{
+        color: $font-color;
+        margin: 50px;
+        align-self: center;
+    }
+
+    .talles-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div{
+        padding: 10px;
+    }
+}

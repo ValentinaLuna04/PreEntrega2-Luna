@@ -1,0 +1,246 @@
+@import "../utilities/variables";
+
+@media only screen and (max-width: 950px){
+    //Index
+    .items-index{
+        display: block;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .item{
+            width: 90%;
+            justify-self: center;
+        }
+    }
+
+    //Up
+   
+}
+
+@media only screen and (max-width: 800px) {
+    //Header
+    header{
+        .header-container{
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "logo logo logo"
+            "buscador buscador buscador"
+            "carrito-container carrito-container carrito-container"
+            ;
+            margin-bottom: 20px;
+
+            .buscador{
+                grid-area: buscador;
+            }
+
+            .logo{
+                grid-area: logo;
+            }
+
+            .carrito-container{
+                grid-area: carrito-conteiner;
+                
+                a{
+                    display: none;
+                }
+            }
+        }
+
+        .nav-container{
+            justify-content: space-between;
+
+            .nav-header{
+                justify-content: center;
+
+                .check-btn{
+                    display: initial;
+                    color: $font-color;
+                    justify-self: start;
+
+                    i{
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .nav-ul{
+                    position: absolute;
+                    top: 105%;
+                    left: 0.5px;
+                    flex-direction: column;
+                    background-color: $background-color;
+                    padding-right: 20px;
+                    margin: 5px;
+                    width: 50%;
+                    display: none;
+
+                    .nav-li{
+                        width: 100%;
+                        padding: 10px;
+                    }
+                }
+
+                #check:checked ~ .nav-ul{
+                    display: initial;
+                }
+            }
+
+            .f1{
+                display: initial;
+                margin-top: 12px;
+                margin-right: 8px;
+            }
+        }
+    }
+
+    
+    .main-top{
+        .top2{
+            //Top
+            #blusas{
+                grid-template-columns: repeat(1, 1fr);
+            }
+            #remeras{
+                grid-template-columns: repeat(1, 1fr);
+            }
+            #sweaters{
+                grid-template-columns: repeat(1, 1fr);
+            }
+            #tops{
+                grid-template-columns: repeat(1, 1fr);
+            }
+            #vestidos{
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            //Bottom
+            #bermudas{
+                grid-template-columns: repeat(1, 1fr);
+            }
+            #pantalones{
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            //Accessories
+            #minibags{
+                grid-template-columns: repeat(1, 1fr);
+            }
+            #bags{
+                grid-template-columns: repeat(1, 1fr);
+            }
+            #uñas{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 740px){
+    //Index
+    .items-index{
+        display: block;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        .item{
+            width: 60%;
+            justify-self: center;
+        }
+    }
+    
+    .talla1{
+        img{
+        width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 680px){
+    .main-top{
+        .top2{
+            margin-right: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 680px){
+    .dis-d{
+        display: flex;
+        justify-content: center;
+
+        .dis{
+            display: initial;
+        }
+    }
+
+    .main-top{
+        display: block;
+
+        .top1{
+            margin-top: 0;
+            padding-top: 25px;
+            h3{
+                display: none;
+            }
+            .ul-top1{
+                display: none;
+            }
+
+            .collapse-top{
+                .d-inline-flex{
+                    #diso{
+                        display: initial;
+                    }
+                }
+            }
+        }
+
+        .top2{
+            .h2-top2{
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    //Index
+    .item{
+        width: 85%;
+    }
+
+    //Footer
+    footer{
+        .footer1{
+            display: block;
+        }
+    }
+}
+
+@media only screen and (max-width: 540px){
+    //Index
+    .item{
+        width: 95%;
+    }
+    
+    .talles{
+        .talles-container{
+            .talla1{
+                img{
+                    width: 400px;
+                }
+            }
+    
+            .talla2{
+                img{
+                    width: 400px;
+                }
+            }
+    
+            .talla3{
+                img{
+                    width: 400px;
+                }
+            }
+        }
+    }
+}

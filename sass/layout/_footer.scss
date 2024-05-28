@@ -1,0 +1,43 @@
+@import "../utilities/variables";
+
+footer{
+    color: $font-color;
+    background-color: $background-color;
+    font-size: small;
+    border-top: 0.5px $font-color solid;
+    padding: 15px;
+
+    nav{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        h2{
+            margin: 0;
+            font-size: 1.3rem;
+        }
+
+        .pago{
+            grid-column: 1 / 2;
+        }
+
+        .redes{
+            grid-column: 3 / 4;
+            justify-self: end;
+            padding-right: 30px;
+        }
+
+        .envio{
+            grid-column: -4 / -3;
+            padding-top: 7px;
+        }
+
+        .contacto-foot{
+            grid-column: -2 / -1;
+            justify-self: end;
+            padding-right: 90px;
+            padding-top: 7px;
+        }
+        
+    }
+}

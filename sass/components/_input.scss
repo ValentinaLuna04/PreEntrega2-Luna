@@ -1,0 +1,30 @@
+@import "../utilities/variables";
+
+.container-contacto{
+    .contacto2{
+        form{
+            .input-contacto{
+                position: relative;
+                input{
+                    width: 150%;
+                    height: 40px;
+                    padding: 0 10px;
+                    outline: none;
+                    background: $input-color;
+                    border: 3px solid transparent;
+                    color: $font-color;
+                }
+
+                textarea{
+                    width: 150%;
+                    height: 140px;
+                    padding: 0 10px;
+                    outline: none;
+                    background: $input-color;
+                    border: 3px solid transparent;
+                    color: $font-color;
+                }
+            }
+        }
+    }
+}
