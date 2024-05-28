@@ -924,6 +924,9 @@ footer nav i {
   }
 }
 @media only screen and (max-width: 540px) {
+  .items-index .item {
+    width: 95%;
+  }
   .talles .talles-container .talla1 img {
     width: 400px;
   }
@@ -935,6 +938,9 @@ footer nav i {
   }
 }
 @media only screen and (max-width: 410px) {
+  .items-index .item {
+    width: 100%;
+  }
   .talles .talles-container .talla1 img {
     width: 320px;
   }
