@@ -824,6 +824,9 @@ footer nav i {
     width: 100%;
     padding: 10px;
   }
+  header .nav-container .nav-header .nav-ul .nav-li a {
+    padding-right: 80px;
+  }
   header .nav-container .nav-header #check:checked ~ .nav-ul {
     display: initial;
   }
