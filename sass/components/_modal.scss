@@ -81,6 +81,25 @@
                         }
                     }
                 }
+
+                p{
+                    font-size: 0.90rem;
+                }
+
+                .color-container{
+                    margin-bottom: 0.7rem;
+                    select{
+                        width: 60%;
+                        height: 40px;
+                        padding: 0 10px;
+                        outline: none;
+                        background-color: $modal-color;
+                        border: 0.5px $radio-color solid;
+                        border-radius: 3px;
+                        color: $font-color;
+                    }
+                }
+
                 button{
                     width: 100%;
                 }
