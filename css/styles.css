@@ -924,6 +924,11 @@ footer nav i {
   .main-top .top2 #tops {
     grid-template-columns: repeat(1, 1fr);
   }
+  .main-top .top2 #tops .item-tops {
+    width: 83%;
+    align-self: center;
+    justify-self: center;
+  }
   .main-top .top2 #vestidos {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -939,8 +944,18 @@ footer nav i {
   .main-top .top2 #bags {
     grid-template-columns: repeat(1, 1fr);
   }
+  .main-top .top2 #bags .item-remeras {
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+  }
   .main-top .top2 #uñas {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .main-top .top2 #uñas .item-remeras {
+    width: 90%;
+    align-self: center;
+    justify-self: center;
   }
 }
 @media only screen and (max-width: 740px) {
@@ -992,7 +1007,7 @@ footer nav i {
 }
 @media only screen and (max-width: 590px) {
   .items-index .item {
-    width: 85%;
+    width: 70%;
   }
   footer .footer1 {
     display: block;
@@ -1000,7 +1015,7 @@ footer nav i {
 }
 @media only screen and (max-width: 540px) {
   .items-index .item {
-    width: 90%;
+    width: 80%;
   }
   .talles .talles-container .talla1 img {
     width: 400px;
@@ -1017,7 +1032,7 @@ footer nav i {
 }
 @media only screen and (max-width: 410px) {
   .items-index .item {
-    width: 100%;
+    width: 85%;
   }
   .talles .talles-container .talla1 img {
     width: 320px;

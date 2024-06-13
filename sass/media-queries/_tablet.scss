@@ -111,6 +111,11 @@
             }
             #tops{
                 grid-template-columns: repeat(1, 1fr);
+                .item-tops{
+                    width: 83%;
+                    align-self: center;
+                    justify-self: center;
+                }
             }
             #vestidos{
                 grid-template-columns: repeat(1, 1fr);
@@ -130,9 +135,19 @@
             }
             #bags{
                 grid-template-columns: repeat(1, 1fr);
+                 .item-remeras{
+                    width: 90%;
+                    align-self: center;
+                    justify-self: center;
+                 }
             }
             #uñas{
                 grid-template-columns: repeat(1, 1fr);
+                .item-remeras{
+                    width: 90%;
+                    align-self: center;
+                    justify-self: center;
+                }
             }
         }
     }
@@ -210,7 +225,7 @@
     //Index
     .items-index{
         .item{
-            width: 85%;
+            width: 70%;
         }
     }
 
@@ -226,7 +241,7 @@
     //Index
     .items-index{
         .item{
-            width: 90%;
+            width: 80%;
         }
     }
     
