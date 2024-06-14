@@ -925,7 +925,7 @@ footer nav i {
     grid-template-columns: repeat(1, 1fr);
   }
   .main-top .top2 #tops .item-tops {
-    width: 85%;
+    width: 90%;
     align-self: center;
     justify-self: center;
   }
@@ -1032,7 +1032,7 @@ footer nav i {
 }
 @media only screen and (max-width: 410px) {
   .items-index .item {
-    width: 85%;
+    width: 90%;
   }
   .talles .talles-container .talla1 img {
     width: 320px;
